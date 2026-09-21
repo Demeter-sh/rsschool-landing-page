@@ -1,0 +1,127 @@
+body > div:first-child {
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    max-width: 1440px;
+    font-family: "Inter";
+}
+
+/* ===== Header ===== */
+/* Navigation bar */
+.header-menu {
+    margin: 0 auto;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu > div:first-child,
+.header-menu > div:first-child > img {
+    width: 100px;
+}
+.header-menu > nav {
+    max-width: 1032px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;    
+    gap: 40px;
+}
+.header-menu ul li {
+    display: block;
+    cursor: pointer;
+}
+.header-menu > div:last-child {
+    width: 184px;
+}
+.header-menu button {
+    border: none;
+    position: relative;
+    vertical-align: middle;
+    font-family: "Inter";
+    cursor: pointer;
+}
+/* Second Article */
+header h1{
+    text-align: center;
+}
+
+header > article:last-child > div:last-child {
+    margin: 0 auto;
+    width: 362px;
+}
+
+header > article:last-child > div:last-child button {
+    width: 115px;
+    border-radius: 40px;
+    align-content: center;
+}
+
+.png-background {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #C1B6AD;
+    border-color: #C1B6AD;
+}
+/* ===== Footer =====*/
+footer li {
+    height: 36px;
+    padding: 4px 0;
+}
+
+footer > article:first-child {
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    gap: 100px;
+    max-width: 1360px;
+    border-radius: 40px;
+}
+
+footer > article:first-child > div:first-child,
+footer > article:first-child > div:last-child {
+    max-width: 530px;
+    align-content: center;
+}
+
+footer > article:first-child > div:first-child a {
+    width: 60px;
+    height: 60px;
+}
+/* Social links */
+footer > article:first-child > div:last-child span {
+    padding-left: 8px;
+}
+.x-social {
+    background: center / contain no-repeat url(../img/button-icon-light.svg);
+}
+
+.insta {
+    background: center / contain no-repeat url(../img/button-icon-light-1.svg);
+    margin: 0 12px;
+}
+
+.facebook {
+    background: center / contain no-repeat url(../img/button-icon-light-2.svg);
+}
+
+.x-social:hover {
+    content: none;
+    background:no-repeat url(../img/button-icon-light-h.svg);
+}
+
+.insta:hover {
+    content:"";
+    background:no-repeat url(../img/button-icon-light-1-h.svg);
+}
+
+.facebook:hover {
+    content:"";
+    background:no-repeat url(../img/button-icon-light-2-h.svg);
+}

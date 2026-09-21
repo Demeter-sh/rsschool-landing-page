@@ -1,0 +1,154 @@
+/* ===== Base container ===== */
+body > div:first-child {
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    max-width: 1440px;
+    font-family: "Inter";
+}
+/* ===== Header ===== */
+/* Navigation bar */
+.header-menu {
+    margin: 0 auto;
+    max-width: 1360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu > div:first-child,
+.header-menu > div:first-child > img {
+    width: 100px;
+}
+.header-menu > nav {
+    max-width: 1032px;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;    
+    gap: 40px;
+}
+.header-menu ul li {
+    display: block;
+    cursor: pointer;
+}
+.header-menu > div:last-child {
+    width: 184px;
+}
+.header-menu button {
+    border: none;
+    position: relative;
+    vertical-align: middle;
+    font-family: "Inter";
+    cursor: pointer;
+}
+/* ===== Hero ===== */
+.hero p {
+    margin: 40px 0;
+}
+header .hero {
+    margin: 0 auto;
+    padding: 100px;
+    max-width: 1360px;
+    background-image: url('../img/img-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 40px;
+}
+.hero > div:first-child {
+    max-width: 530px;
+}
+
+.hero button {
+    width: 200px;
+    height: 64px;
+    border-radius: 40px;
+}
+.hero button > span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+/* .hero button animation */
+.hero button:hover > span {
+    display: inline-block;
+    transform: translateX(-30%);
+    transition: 1s ease;
+}
+.hero button:hover > span::after {
+    content: "";
+    position: absolute;
+    right: -5px;              
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    background: right / contain no-repeat url(../img/coffee-cup.svg);
+    transition: 2s ease;
+    
+}
+/* ===== Footer =====*/
+footer li {
+    height: 36px;
+    padding: 4px 0;
+}
+
+footer > article:first-child {
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    gap: 100px;
+    max-width: 1360px;
+    border-radius: 40px;
+}
+
+footer > article:first-child > div:first-child,
+footer > article:first-child > div:last-child {
+    max-width: 530px;
+    align-content: center;
+}
+
+footer > article:first-child > div:first-child a {
+    width: 60px;
+    height: 60px;
+}
+/* Social links */
+footer > article:first-child > div:last-child span {
+    padding-left: 8px;
+}
+.x-social {
+    background: center / contain no-repeat url(../img/button-icon-light.svg);
+}
+
+.insta {
+    background: center / contain no-repeat url(../img/button-icon-light-1.svg);
+    margin: 0 12px;
+}
+
+.facebook {
+    background: center / contain no-repeat url(../img/button-icon-light-2.svg);
+}
+
+.x-social:hover {
+    content: none;
+    background:no-repeat url(../img/button-icon-light-h.svg);
+}
+
+.insta:hover {
+    content:"";
+    background:no-repeat url(../img/button-icon-light-1-h.svg);
+}
+
+.facebook:hover {
+    content:"";
+    background:no-repeat url(../img/button-icon-light-2-h.svg);
+}

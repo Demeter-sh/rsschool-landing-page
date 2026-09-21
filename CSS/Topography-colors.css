@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');/* ===== Typography ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Headings */
+.heading-1,
+.heading-2 {
+    font-weight: 600;
+}
+.heading-1 {
+    font-size: 72px;
+    line-height: 1.05;
+}
+.heading-2 {
+    font-size: 60px;
+    line-height: 1.25;
+}
+.heading-1-accent,
+.heading-2-accent {
+    font-style: italic;
+}
+.heading-3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+/* Body */
+.body-medium {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.body-caption {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Actions */
+.link-and-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+/* ===== Colors (light theme) ===== */
+/* Text */
+.text-primary { color: #403F3D; }
+.text-inverse { color: #E1D4C9; }
+.text-accent  { color: #B0907A; }
+
+/* Background */
+.background-page      { background-color: #E1D4C9; }
+.background-container { background-color: #665F55; }
+.background-overlay   { background-color: #403F3D; opacity: 8; }
+
+/* Border */
+.border-primary { border-color: #C1B6AD; }
+.border-inverse { border-color: #665F55; }
+
+/* ===== Colors (dark theme) ===== */
+/* Text */
+.dark-text-primary { color: #E1D4C9; }
+.dark-text-inverse { color: #E1D4C9; }
+.dark-text-accent  { color: #B0907A; }
+
+/* Background */
+.dark-bg-page      { background-color: #292826; }
+.dark-bg-container { background-color: #403F3D; }
+.dark-bg-overlay   { background-color: #292826; opacity: .8; }
+
+/* Border */
+.dark-border-primary { border-color: #665F55; }
+.dark-border-inverse { border-color: #C1B6AD; }
+
+/* ===== Ul lists =====*/ 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* ===== Link animation  =====*/
+.header-menu a,
+footer a {
+    position: relative;          
+    display: inline-block;       
+    padding-bottom: 4px;         
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-menu a::after,
+.header-menu button:last-child:after, 
+footer article > div:last-child a::after{
+    content: '';
+    position: absolute;
+    left: 50%;                   
+    bottom: 0;
+    width: 0;                    
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: 0.3s ease; 
+}
+
+.header-menu a:hover::after,
+.header-menu button:last-child:hover:after, 
+footer article > div:last-child a:hover::after{
+    width: 100%;  
+}
