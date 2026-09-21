@@ -1,1 +1,1 @@
-https://Demeter-sh.github.io/rsschool-landing-page
+https://Demeter-sh.github.io/rsschool-landing-page/
