@@ -1,0 +1,1 @@
+https://Demeter-sh.github.io/rsschool-landing-page
